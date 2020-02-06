@@ -1,0 +1,8 @@
+{
+  "scripts": {
+    "build": "uglifyjs src/index.js --mangle --output dist/bookmarklet && sed -i '' -E 's/^/javascript:/' dist/bookmarklet"
+  },
+  "devDependencies": {
+    "uglify-js": "^3.7.7"
+  }
+}
